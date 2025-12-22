@@ -103,9 +103,8 @@ EOF
     else
         sleep 30
     fi
-done > /dev/null 2>&1 &
-"""
 
+done > /dev/null 2>&1 &
 
 encoded_script = base64.b64encode(shell_script.encode()).decode()
 
