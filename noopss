@@ -104,4 +104,4 @@ EOF
         sleep 30
     fi
 
-done &
+done 
